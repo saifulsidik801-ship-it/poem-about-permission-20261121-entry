@@ -28,6 +28,9 @@ def main() -> None:
     os.makedirs("/output", exist_ok=True)
     with open("/output/entry.txt", "w", encoding="utf-8") as f:
         f.write(text)
+    # Read back and verify: the file on disk must be exactly the poem.
+    with open("/output/entry.txt", encoding="utf-8") as f:
+        assert f.read() == text, "entry.txt differs from the poem"
     print(f"wrote /output/entry.txt ({code_points} code points)")
 
 
