@@ -4,20 +4,21 @@
 Writes one short poem about agency (the power to ask and to be given)
 to /output/entry.txt. Deterministic, standard library only, no network.
 
-The poem (7 lines, relay-baton image): agency is not the thing held,
-it is the handing over — asked for, given, and taken back when the
-asking stops.
+The poem (7 lines, relay-baton scene, 275 code points): a father
+presses the baton into his son's palm, the son asks if he's sure, runs, turns at the
+line and holds it out — and the father says keep it. Permission
+reframed as trust: the race was never his, it was the giving.
 """
 
 import os
 
-POEM = """Take the baton — it is warm from my hand,
-and yours only while you run.
-Ask, and the lane opens;
-stop asking, and it cools
-in my palm again.
-Power was never the thing held.
-It was the handing over."""
+POEM = """Take it, he says, and presses the baton
+into my palm — warm from his hand.
+I ask if he's sure. He nods toward the lane.
+I run. His footsteps slow, then stop.
+At the line I turn, and hold it out.
+He shakes his head. Keep it, he says.
+The race was never his. It was the giving."""
 
 
 def main() -> None:
